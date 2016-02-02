@@ -15,8 +15,8 @@ import org.xml.sax.SAXException;
  
 public class SchemaTest extends junit.framework.TestCase {
  
-    String myXmlSchemaFile = "/var/lib/jenkins/workspace/test/src/oata/myXML.xsd";
-    String myXmlDocument = "/var/lib/jenkins/workspace/test/src/oata/myXML.xml";
+    String myXmlSchemaFile = "/var/lib/jenkins/workspace/Waitrose POC/src/oata/myXML.xsd";
+    String myXmlDocument = "/var/lib/jenkins/workspace/Waitrose POC/src/oata/myXML.xml";
 
     public void testXMLSchemaDefinition() {
     }
