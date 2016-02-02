@@ -1,5 +1,4 @@
-package com.xmlunit.tutorial.comparison;
- 
+
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
@@ -11,7 +10,7 @@ import org.custommonkey.xmlunit.Diff;
 import org.custommonkey.xmlunit.Difference;
 import org.xml.sax.SAXException;
  
-public class ComparisonTest {
+public class ComparisonTest extends junit.framework.TestCase {
  
     public static void main(String[] args) {
         URL url1 = ComparisonTest.class.getResource("/var/lib/jenkins/workspace/Waitrose POC/src/oata/reference.xml");
