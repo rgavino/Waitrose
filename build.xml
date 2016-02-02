@@ -1,4 +1,4 @@
-<project name="HelloWorld" basedir="." default="main">
+<project xmlns:jacoco="antlib:org.jacoco.ant" name="HelloWorld" basedir="." default="main">
 
     <property name="src.dir"     value="src"/>
 
