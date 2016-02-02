@@ -19,13 +19,11 @@ public class ComparisonTest extends junit.framework.TestCase {
 
     public void testToCompareXMLFiles() {
 
-        File fr1 = null;
-        File fr2 = null;
-            fr1 = new File(myXmlReference);
-            fr2 = new File(myXmlCompare);
- 
+        InputSource isRef = new InputSource(new FileInputStream(myXmlReference));
+        InputSource isCom = new InputSource(new FileInputStream(myXmlCompare));
+
         try {
-            Diff diff = new Diff(fr1, fr2);
+            Diff diff = new Diff(isRef, isCom);
             System.out.println("Similar? " + diff.similar());
             System.out.println("Identical? " + diff.identical());
 
