@@ -49,6 +49,7 @@ public class ComparisonTest extends junit.framework.TestCase {
         } catch (IOException e) {
             e.printStackTrace();
         }
-    }
 */ 
+
+    }
 }
