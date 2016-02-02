@@ -21,12 +21,8 @@ public class ComparisonTest extends junit.framework.TestCase {
 
         File fr1 = null;
         File fr2 = null;
-        try {
-            fr1 = new File(myXmlReference);
-            fr2 = new File(myXmlCompare);
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
+        fr1 = new File(myXmlReference);
+        fr2 = new File(myXmlCompare);
  
 /*
         try {
