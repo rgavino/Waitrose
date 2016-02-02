@@ -41,10 +41,6 @@ public class ComparisonTest extends junit.framework.TestCase {
 
         } catch (Exception e) {
             e.printStackTrace();
-        } catch (SAXException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
         }
 
     }
