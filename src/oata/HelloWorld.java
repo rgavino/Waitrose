@@ -10,5 +10,13 @@ public class HelloWorld {
         BasicConfigurator.configure();
         logger.info("Hello World");          // the old SysO-statement
     }
+
+    public String sayHello(String name) {
+		return "Hello " + name;
+	}
+
+    public String sayHello() {
+		return "Hey bud!";
+	}
 }
 
