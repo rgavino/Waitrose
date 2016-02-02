@@ -14,7 +14,7 @@ import org.xml.sax.SAXException;
  
 public class ComparisonTest extends junit.framework.TestCase {
  
-    public static void main(String[] args) {
+    public void testToCompareXMLFiles() {
         URL url1 = ComparisonTest.class.getResource("/var/lib/jenkins/workspace/Waitrose POC/src/oata/reference.xml");
         URL url2 = ComparisonTest.class.getResource("/var/lib/jenkins/workspace/Waitrose POC/src/oata/comparison.xml");
         FileReader fr1 = null;
@@ -39,6 +39,8 @@ public class ComparisonTest extends junit.framework.TestCase {
                 System.out.println(difference);
                 System.out.println("***********************");
             }
+
+            assertTrue("They are identicle", diff.identical());
  
         } catch (SAXException e) {
             e.printStackTrace();
