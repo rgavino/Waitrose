@@ -19,8 +19,12 @@ public class ComparisonTest extends junit.framework.TestCase {
 
     public void testToCompareXMLFiles() {
 
-        InputSource isRef = new InputSource(new FileInputStream(myXmlReference));
-        InputSource isCom = new InputSource(new FileInputStream(myXmlCompare));
+        try {
+            InputSource isRef = new InputSource(new FileInputStream(myXmlReference));
+            InputSource isCom = new InputSource(new FileInputStream(myXmlCompare));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
         try {
             Diff diff = new Diff(isRef, isCom);
