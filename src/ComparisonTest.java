@@ -21,10 +21,9 @@ public class ComparisonTest extends junit.framework.TestCase {
 
         File fr1 = null;
         File fr2 = null;
-        fr1 = new File(myXmlReference);
-        fr2 = new File(myXmlCompare);
+            fr1 = new File(myXmlReference);
+            fr2 = new File(myXmlCompare);
  
-/*
         try {
             Diff diff = new Diff(fr1, fr2);
             System.out.println("Similar? " + diff.similar());
@@ -47,7 +46,6 @@ public class ComparisonTest extends junit.framework.TestCase {
         } catch (IOException e) {
             e.printStackTrace();
         }
-*/ 
 
     }
 }
