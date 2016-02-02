@@ -19,7 +19,6 @@ public class ComparisonTest extends junit.framework.TestCase {
         URL url2 = ComparisonTest.class.getResource("/var/lib/jenkins/workspace/Waitrose POC/src/oata/comparison.xml");
         FileReader fr1 = null;
         FileReader fr2 = null;
-/*
         try {
             fr1 = new FileReader(url1.getPath());
             fr2 = new FileReader(url2.getPath());
@@ -27,6 +26,7 @@ public class ComparisonTest extends junit.framework.TestCase {
             e.printStackTrace();
         }
  
+/*
         try {
             Diff diff = new Diff(fr1, fr2);
             System.out.println("Similar? " + diff.similar());
