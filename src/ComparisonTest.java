@@ -14,14 +14,16 @@ import org.xml.sax.SAXException;
  
 public class ComparisonTest extends junit.framework.TestCase {
  
+    String myXmlReference = "/var/lib/jenkins/workspace/Waitrose POC/src/oata/reference.xml";
+    String myXmlCompare = "/var/lib/jenkins/workspace/Waitrose POC/src/oata/comparison.xml";
+
     public void testToCompareXMLFiles() {
-        URL url1 = ComparisonTest.class.getResource("/var/lib/jenkins/workspace/Waitrose POC/src/oata/reference.xml");
-        URL url2 = ComparisonTest.class.getResource("/var/lib/jenkins/workspace/Waitrose POC/src/oata/comparison.xml");
-        FileReader fr1 = null;
-        FileReader fr2 = null;
+
+        File fr1 = null;
+        File fr2 = null;
         try {
-            fr1 = new FileReader(url1.getPath());
-            fr2 = new FileReader(url2.getPath());
+            fr1 = new File(myXmlReference);
+            fr2 = new File(myXmlCompare);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
