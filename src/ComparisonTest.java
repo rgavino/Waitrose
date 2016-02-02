@@ -30,18 +30,19 @@ public class ComparisonTest extends junit.framework.TestCase {
             Diff diff = new Diff(fr1, fr2);
             System.out.println("Similar? " + diff.similar());
             System.out.println("Identical? " + diff.identical());
- 
-            DetailedDiff detDiff = new DetailedDiff(diff);
-            List differences = detDiff.getAllDifferences();
-            for (Object object : differences) {
-                Difference difference = (Difference)object;
-                System.out.println("***********************");
+
+            assertTrue("They are identicle", diff.identical());
+
+/*            DetailedDiff detDiff = new DetailedDiff(diff);
+//            List differences = detDiff.getAllDifferences();
+//            for (Object object : differences) {
+//                Difference difference = (Difference)object;
+//               System.out.println("***********************");
                 System.out.println(difference);
                 System.out.println("***********************");
             }
+*/
 
-            assertTrue("They are identicle", diff.identical());
- 
         } catch (SAXException e) {
             e.printStackTrace();
         } catch (IOException e) {
