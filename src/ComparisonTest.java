@@ -14,8 +14,8 @@ import org.xml.sax.SAXException;
  
 public class ComparisonTest extends junit.framework.TestCase {
  
-    String myXmlReference = "/var/lib/jenkins/workspace/Waitrose POC/src/oata/reference.xml";
-    String myXmlCompare = "/var/lib/jenkins/workspace/Waitrose POC/src/oata/comparison.xml";
+    String myXmlReference = "/vars/lib/jenkins/workspace/Waitrose POC/src/oata/reference.xml";
+    String myXmlCompare = "/vars/lib/jenkins/workspace/Waitrose POC/src/oata/comparison.xml";
 
     public void testToCompareXMLFiles() {
 
