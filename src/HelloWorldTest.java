@@ -4,7 +4,7 @@ public class HelloWorldTest extends junit.framework.TestCase {
 
     public void testSayHelloShouldGreetWithName() {
     	HelloWorld robot = new HelloWorld();
-    	String name = "Ronnie";
+    	String name = "Ronnie f";
 
     	assertEquals("Hello " + name, robot.sayHello(name));
     }
@@ -12,7 +12,7 @@ public class HelloWorldTest extends junit.framework.TestCase {
     public void testSaysHeyBudIfNoName() {
     	HelloWorld robot = new HelloWorld();
 
-    	assertEquals("Hey bud!", robot.sayHello());
+    	assertEquals("Hey bud!ff", robot.sayHello());
     }
     
 }
