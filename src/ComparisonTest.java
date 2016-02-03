@@ -1,21 +1,10 @@
 
-import java.io.File;
-import java.io.FileInputStream;
 
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
-import java.net.URL;
-import java.util.List;
- 
-import org.custommonkey.xmlunit.*;
-import org.xml.sax.InputSource;
-import org.xml.sax.SAXException;
  
 public class ComparisonTest extends junit.framework.TestCase {
  
-    String myXmlReference = "/vars/lib/jenkins/workspace/Waitrose POC/src/oata/reference.xml";
-    String myXmlCompare = "/vars/lib/jenkins/workspace/Waitrose POC/src/oata/comparison.xml";
+    String myXmlReference = "/var/lib/jenkins/workspace/Waitrose POC/src/oata/reference.xml";
+    String myXmlCompare = "/var/lib/jenkins/workspace/Waitrose POC/src/oata/comparison.xml";
 
     public void testToCompareXMLFiles() {
 
