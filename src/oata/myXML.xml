@@ -18,7 +18,7 @@ xsi:noNamespaceSchemaLocation="shiporder.xsd">
   </item>
   <item>
     <title>Hide your heart</title>
-    <quantity>1</quantity>
-    <price>99</price>
+    <quantity>-1</quantity>
+    <price>99.0</price>
   </item>
 </shiporder>
